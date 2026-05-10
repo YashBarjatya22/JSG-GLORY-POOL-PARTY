@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSG GLORY - Premium Event Experience 2026</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body class="light-theme">
+    <!-- ==================== SCROLL PROGRESS BAR ==================== -->
+    <div class="scroll-progress-bar"></div>
+
+    <!-- ==================== CURSOR GLOW EFFECT ==================== -->
+    <div class="cursor-glow"></div>
+
+    <!-- ==================== NAVIGATION BAR ==================== -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <span class="logo-text">JSG GLORY</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#hero" class="nav-link">Home</a></li>
+                <li><a href="#countdown" class="nav-link">Countdown</a></li>
+                <li><a href="#events" class="nav-link">Events</a></li>
+                <li><a href="#announcement" class="nav-link">Announcement</a></li>
+                <li><a href="#timeline" class="nav-link">Yearly Timeline</a></li>
+                <li><a href="#membership" class="nav-link">Membership</a></li>
+            </ul>
+            <div style="display: flex; align-items: center; gap: 1rem; margin-left: 1rem;">
+                <button id="musicToggle" class="btn btn-primary-sm" style="padding: 0.5rem 1rem; display: flex; align-items: center; gap: 0.5rem;" title="Play Background Music">
+                    <span id="musicIcon">🎵</span> <span id="musicText">Play Music</span>
+                </button>
+                <button id="themeToggle" style="background: none; border: none; font-size: 1.5rem; cursor: pointer; color: var(--heading-color); transition: transform 0.3s;" title="Toggle Light/Dark Theme">☀️</button>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero" id="hero">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+            <div class="floating-particles">
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+            </div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-subtitle" data-aos="fade-up">JSG GLORY PRESENTS</h1>
+            <h2 class="hero-title" data-aos="fade-up" data-aos-delay="100">POOL PARTY 2026</h2>
+            <p class="hero-tagline" data-aos="fade-up" data-aos-delay="200">Luxury • Music • Resort • Memories</p>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <div class="arrow">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== COUNTDOWN SECTION ==================== -->
+    <section class="countdown-section" id="countdown">
+        <div class="section-header" data-aos="fade-up">
+            <h2>BEAT THE HEAT GLORY'S VENTURE</h2>
+            <p>The biggest event of the summer is almost here</p>
+        </div>
+        <div class="countdown-container" data-aos="zoom-in">
+            <div class="countdown-timer">
+                <div class="timer-card">
+                    <div class="timer-value" id="days">0</div>
+                    <div class="timer-label">Days</div>
+                </div>
+                <div class="timer-card">
+                    <div class="timer-value" id="hours">0</div>
+                    <div class="timer-label">Hours</div>
+                </div>
+                <div class="timer-card">
+                    <div class="timer-value" id="minutes">0</div>
+                    <div class="timer-label">Minutes</div>
+                </div>
+                <div class="timer-card">
+                    <div class="timer-value" id="seconds">0</div>
+                    <div class="timer-label">Seconds</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== EVENTS SECTION ==================== -->
+    <section class="events-section" id="events">
+        <div class="section-header" data-aos="fade-up">
+            <h2>FEATURED EVENT</h2>
+            <p>Experience unforgettable moments</p>
+        </div>
+        <div class="events-container">
+            <!-- Event 1: Pool Party -->
+            <div class="event-card" data-aos="fade-up">
+                <div class="event-image-wrapper">
+                    <div class="event-image event-1" style="background: url('download.jpeg') center/cover no-repeat;"></div>
+                    <div class="event-overlay"></div>
+                    <div class="event-date-badge">17 MAY 2026</div>
+                </div>
+                <div class="event-content">
+                    <h3 class="event-title">Pool Party</h3>
+                    <div class="event-features">
+                        <span class="feature-tag">DJ Night</span>
+                        <span class="feature-tag">Pool Access</span>
+                        <span class="feature-tag">Rain Dance</span>
+                        <span class="feature-tag">Food & Mocktails</span>
+                        <span class="feature-tag">Photography</span>
+                    </div>
+                    <div style="margin-bottom: 1.5rem; font-size: 0.95rem;">
+                        <span style="color: var(--muted-text);">📍 Location: </span>
+                        <a href="https://www.google.com/maps/place/Riverarch+Greenfields+Resorts,+Rajasthan+303002/@27.1731345,75.9956922,17z/data=!3m1!4b1!4m6!3m5!1s0x396da0d42944f147:0x92d38adcca2b15a5!8m2!3d27.1731729!4d75.9982972!16s%2Fg%2F11lsnglw2f?entry=ttu&g_ep=EgoyMDI2MDUwNi4wIKXMDSoASAFQAw%3D%3D" target="_blank" style="color: var(--primary-color); text-decoration: none; font-weight: 600;">Riverarch Greenfields Resort, Jaipur</a>
+                    </div>
+                    <div style="display: flex; gap: 1rem;">
+                        <button class="btn btn-primary-sm" onclick="var d = document.getElementById('event-details'); if(d.style.display === 'none' || d.style.display === '') { d.style.display = 'block'; this.innerText = 'Hide Details'; } else { d.style.display = 'none'; this.innerText = 'Click Here'; }">Click Here</button>
+                        <button class="btn btn-primary-sm" onclick="var c = document.getElementById('coordinators-details'); if(c.style.display === 'none' || c.style.display === '') { c.style.display = 'block'; this.innerText = 'Hide Coordinators'; } else { c.style.display = 'none'; this.innerText = 'Coordinators'; }">Coordinators</button>
+                    </div>
+                    <div id="event-details" style="display: none; margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid var(--shadow-glow); text-align: left; font-size: 0.9rem; color: var(--muted-text);">
+                        <h4 style="color: var(--primary-color); margin-bottom: 0.8rem; font-size: 1.1rem;">📅 Event Schedule</h4>
+                        <ul style="list-style: none; padding: 0; margin-bottom: 1.5rem;">
+                            <li style="margin-bottom: 0.5rem;">🕒 <strong>Registration:</strong> 1:00 PM onwards</li>
+                            <li style="margin-bottom: 0.5rem;">🍽️ <strong>Snacks:</strong> Heavy Appetizers till 2:30 PM</li>
+                            <li style="margin-bottom: 0.5rem;">💦 <strong>Pool Party & Rain Dance:</strong> 3:00 PM onwards</li>
+                            <li style="margin-bottom: 0.5rem;">☕ <strong>Hi-Tea:</strong> 4:30 PM - 5:30 PM</li>
+                            <li style="margin-bottom: 0.5rem;">🎮 <strong>Pool Party & Games:</strong> Continuous</li>
+                            <li style="margin-bottom: 0.5rem;">🍲 <strong>Dinner:</strong> 7:30 PM onwards</li>
+                            <li style="margin-bottom: 0.5rem;">🏆 <strong>Prize Distribution:</strong> 7:30 PM onwards</li>
+                        </ul>
+                        <h4 style="color: var(--sub-text); margin-bottom: 0.8rem; font-size: 1.1rem;">📝 Important Notes</h4>
+                        <ol style="padding-left: 1.2rem; margin-bottom: 0;">
+                            <li style="margin-bottom: 0.5rem;">Please bring your own towel, swimming costume, and a safety lock for the locker.</li>
+                        </ol>
+                    </div>
+                    <div id="coordinators-details" style="display: none; margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid var(--shadow-glow); text-align: left;">
+                        <h4 style="color: var(--primary-color); margin-bottom: 1.5rem; font-size: 1.1rem; text-align: center;">Team Coordinators</h4>
+                        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem;">
+                            <div style="text-align: center;">
+                                <img src="coord1.jpeg" style="width: 100%; border-radius: 10px; border: 1px solid var(--shadow-glow); aspect-ratio: 1/1; object-fit: cover; box-shadow: 0 4px 10px rgba(0,0,0,0.3);" alt="Shweta Neeraj Ajmera">
+                                <p style="margin-top: 0.5rem; margin-bottom: 0; font-size: 0.95rem; color: var(--primary-color); font-weight: 600;">Shweta Neeraj Ajmera</p>
+                            </div>
+                            <div style="text-align: center;">
+                                <img src="coord2.jpeg" style="width: 100%; border-radius: 10px; border: 1px solid var(--shadow-glow); aspect-ratio: 1/1; object-fit: cover; object-position: top; box-shadow: 0 4px 10px rgba(0,0,0,0.3);" alt="Pankaj Deepika Jain">
+                                <p style="margin-top: 0.5rem; margin-bottom: 0; font-size: 0.95rem; color: var(--primary-color); font-weight: 600;">Pankaj Deepika Jain</p>
+                            </div>
+                            <div style="text-align: center;">
+                                <img src="coord3.jpeg" style="width: 100%; border-radius: 10px; border: 1px solid var(--shadow-glow); aspect-ratio: 1/1; object-fit: cover; box-shadow: 0 4px 10px rgba(0,0,0,0.3);" alt="Avdesh Meenu Patni">
+                                <p style="margin-top: 0.5rem; margin-bottom: 0; font-size: 0.95rem; color: var(--primary-color); font-weight: 600;">Avdesh Meenu Patni</p>
+                            </div>
+                            <div style="text-align: center;">
+                                <img src="coord5.jpeg" style="width: 100%; border-radius: 10px; border: 1px solid var(--shadow-glow); aspect-ratio: 1/1; object-fit: cover; box-shadow: 0 4px 10px rgba(0,0,0,0.3);" alt="Suchi Ashish Jain">
+                                <p style="margin-top: 0.5rem; margin-bottom: 0; font-size: 0.95rem; color: var(--primary-color); font-weight: 600;">Suchi Ashish Jain</p>
+                            </div>
+                        </div>
+                    </div>                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== VIDEO GALLERY SECTION ==================== -->
+    <section class="video-gallery-section" style="padding: 6rem 2rem; background: linear-gradient(135deg, var(--dark-bg) 0%, var(--dark-card) 100%);" id="gallery">
+        <div class="section-header" data-aos="fade-up">
+            <h2>VIDEO GALLERY OF RESORT</h2>
+            <p>A sneak peek into the ultimate luxury experience</p>
+        </div>
+        <div class="video-container" style="max-width: 1000px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem;">
+            <div class="video-card" data-aos="zoom-in" style="background: var(--glass-bg); backdrop-filter: blur(10px); border: 1px solid var(--shadow-glow); border-radius: 20px; overflow: hidden; box-shadow: 0 8px 32px var(--shadow-soft); transition: transform 0.3s ease, box-shadow 0.3s ease;" onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 15px 40px var(--shadow-glow)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 8px 32px var(--shadow-soft)'">
+                <video controls autoplay muted loop playsinline style="width: 100%; max-height: 550px; object-fit: cover; display: block; border-bottom: 2px solid var(--primary-color);">
+                    <source src="video1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div style="padding: 1.5rem; text-align: center;">
+                    <h4 style="color: var(--primary-color); margin: 0; font-size: 1.3rem;">Attractive Gifts, Games & Prizes</h4>
+                    <p style="color: var(--muted-text); font-size: 0.9rem; margin: 0.5rem 0 0 0;">An unforgettable experience filled with excitement and luxury.</p>
+                </div>
+            </div>
+            <div class="video-card" data-aos="zoom-in" data-aos-delay="100" style="background: var(--glass-bg); backdrop-filter: blur(10px); border: 1px solid var(--shadow-glow); border-radius: 20px; overflow: hidden; box-shadow: 0 8px 32px var(--shadow-soft); transition: transform 0.3s ease, box-shadow 0.3s ease;" onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 15px 40px var(--shadow-glow)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 8px 32px var(--shadow-soft)'">
+                <video controls autoplay muted loop playsinline style="width: 100%; max-height: 550px; object-fit: cover; display: block; border-bottom: 2px solid var(--primary-color);">
+                    <source src="video2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div style="padding: 1.5rem; text-align: center;">
+                    <h4 style="color: var(--primary-color); margin: 0; font-size: 1.3rem;">Poolside Vibes</h4>
+                    <p style="color: var(--muted-text); font-size: 0.9rem; margin: 0.5rem 0 0 0;">Relax, unwind, and enjoy premium resort amenities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== MEMBERSHIP RULES SECTION ==================== -->
+    <section class="membership-section" id="membership">
+        <div class="section-header" data-aos="fade-up">
+            <h2>MEMBERSHIP RULES</h2>
+            <p>Simple structure for a premium yearly experience</p>
+        </div>
+        <div class="membership-grid">
+            <div class="membership-card" data-aos="zoom-in">
+                <span class="membership-icon">💎</span>
+                <h4>Couple Membership Fee</h4>
+                <p class="membership-price">₹18,000</p>
+                <p>Includes husband and wife annual participation in the JSG GLORY event calendar.</p>
+            </div>
+            <div class="membership-card" data-aos="zoom-in" data-aos-delay="80">
+                <span class="membership-icon">🆕</span>
+                <h4>New Member Registration Fee</h4>
+                <p class="membership-price">₹1,000</p>
+                <p>One-time onboarding charge for each new member joining the annual group cycle.</p>
+            </div>
+            <div class="membership-card" data-aos="zoom-in" data-aos-delay="160">
+                <span class="membership-icon">🎈</span>
+                <h4>Kids Fee</h4>
+                <p class="membership-price">₹1,500 / kid</p>
+                <p>Kids are welcome in family events and kids-focused programs across the yearly timeline.</p>
+            </div>
+            <div class="membership-card" data-aos="zoom-in" data-aos-delay="240" style="background: linear-gradient(135deg, var(--glass-bg-hover), var(--shadow-glow)); border: 2px solid var(--primary-color); box-shadow: 0 0 30px var(--shadow-glow); position: relative; overflow: hidden; transform: scale(1.02);">
+                <div style="position: absolute; top: 15px; right: -35px; background: var(--primary-color); color: var(--dark-bg); font-weight: bold; padding: 5px 40px; transform: rotate(45deg); font-size: 0.8rem; box-shadow: 0 2px 10px rgba(0,0,0,0.5);">SPECIAL</div>
+                <span class="membership-icon">🎁</span>
+                <h4 style="color: var(--heading-color); text-shadow: 0 0 10px var(--shadow-glow); font-size: 1.4rem;">Attractive Gifts</h4>
+                <p class="membership-price" style="font-size: 1.8rem; text-shadow: 0 0 15px rgba(0, 217, 255, 0.8);">Worth ₹1,500</p>
+                <p style="color: var(--sub-text); font-weight: bold; font-size: 1.05rem;">If you deposit the fee on or before May 17th.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== YEARLY TIMELINE SECTION ==================== -->
+    <section class="timeline-section" id="timeline">
+        <div class="section-header" data-aos="fade-up">
+            <h2>YEARLY EVENT TIMELINE</h2>
+            <p>Luxury experiences across 2026-2027</p>
+        </div>
+        <div class="timeline-container">
+            <div class="timeline-item" data-aos="fade-right">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <p class="timeline-time">MAY 2026</p>
+                    <h4>💦 Water Park + Pool Party Family Outing</h4>
+                    <p>Add new members and kids. Kick off the season with splash zones, family fun and outdoor celebration vibes.</p>
+                </div>
+            </div>
+            <div class="timeline-item" data-aos="fade-left">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <p class="timeline-time">JUNE 2026</p>
+                    <h4>🏨 Night Stay At Resort</h4>
+                    <p>Pool, fun-filled activities and hangout sessions. Kids program included with nightlife vibes.</p>
+                </div>
+            </div>
+            <div class="timeline-item" data-aos="fade-right">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <p class="timeline-time">AUGUST 2026</p>
+                    <h4>👗 Fashion Show - Lehariya Theme</h4>
+                    <p>Hosted at Farm House with kids program included and a colorful Rajasthani luxury aesthetic.</p>
+                </div>
+            </div>
+            <div class="timeline-item" data-aos="fade-left">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <p class="timeline-time">SEPTEMBER 2026</p>
+                    <h4>🎵 Bhaktamer Dharmik stotra</h4>
+                    <p>Traditional cultural evening with live devotional music.</p>
+                </div>
+            </div>
+            <div class="timeline-item" data-aos="fade-right">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <p class="timeline-time">DECEMBER 2026</p>
+                    <h4>🎃 Halloween Party</h4>
+                    <p>Adults special event with dramatic decor, curated entertainment and cinematic after-dark energy.</p>
+                </div>
+            </div>
+            <div class="timeline-item" data-aos="fade-left">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <p class="timeline-time">FEBRUARY 2027</p>
+                    <h4>❤️ Valentine Couple Party</h4>
+                    <p>Theme celebration with a romantic luxury setup for couples and elevated hospitality.</p>
+                </div>
+            </div>
+            <div class="timeline-item" data-aos="fade-right">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <p class="timeline-time">MARCH 2027</p>
+                    <h4>🌈 Holi Program</h4>
+                    <p>Colorful, playful Holi visuals with festive music, community joy and signature JSG GLORY style.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ==================== ANNOUNCEMENT & FEES (REPLACES REGISTRATION/TESTIMONIALS) ==================== -->
+    <section class="announcement-section" id="announcement">
+        <div class="section-header" data-aos="fade-up">
+            <h2>ANNOUNCEMENT FROM TEAM GLORY</h2>
+            <p>Important updates, fees and event details — please read carefully</p>
+        </div>
+        <div class="announcement-container" data-aos="fade-up">
+            <div class="announcement-card">
+                <h3>Dear Friends — Jai Jinendra 🙏</h3>
+                <p>We at Team Glory are grateful for your cooperation, love and support for our beloved group.</p>
+                <p>Please review the yearly event timeline and membership rules for FY 2026-27.</p>
+
+                <div class="fees-list">
+                    <ul>
+                        <li>💎 Couple (Husband & Wife): <strong>₹18,000</strong></li>
+                        <li>💎 Kids: <strong>₹1,500</strong> per kid</li>
+                        <li>💎 Registration fee for new members: <strong>₹1,000</strong></li>
+                        <li>💎 Add new members and kids to enjoy the full premium yearly schedule.</li>
+                    </ul>
+                </div>
+
+
+                <p>With heartfelt gratitude,</p>
+                <p>🖋️ Piyush Monali Soni — President<br>
+                   🖋️ Hemant Sweta Barjatya — Secretary<br>
+                   🖋️ Ruby Saurabh Jain — Treasurer</p>
+
+                <div class="announcement-actions">
+                    <a href="#membership" class="btn btn-secondary">View Membership Rules</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== WHY JOIN SECTION ==================== -->
+    <section class="why-join-section">
+        <div class="section-header" data-aos="fade-up">
+            <h2>WHY JOIN JSG GLORY</h2>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="50">
+                <div class="feature-icon">🤝</div>
+                <h4>Networking</h4>
+            </div>
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="feature-icon">🎵</div>
+                <h4>Music & Entertainment</h4>
+            </div>
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="150">
+                <div class="feature-icon">📸</div>
+                <h4>Memories</h4>
+            </div>
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="250">
+                <div class="feature-icon">🎉</div>
+                <h4>Fun Activities</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== LEADERSHIP SECTION ==================== -->
+    <section class="leadership-section" style="padding: 4rem 2rem 2rem; text-align: center; background: var(--dark-bg);">
+        <div class="section-header" data-aos="fade-up">
+            <h2>TEAM GLORY LEADERSHIP</h2>
+            <p>The visionaries behind our premium experiences</p>
+        </div>
+        <div style="display: flex; justify-content: center; align-items: center; gap: 2rem; flex-wrap: wrap; max-width: 1100px; margin: 0 auto; padding-top: 2rem;">
+            <!-- Secretary -->
+            <div style="background: var(--glass-bg); backdrop-filter: blur(10px); border: 1px solid var(--shadow-glow); border-radius: 20px; padding: 2rem 1.5rem; width: 280px; box-shadow: 0 8px 32px var(--shadow-soft); transition: transform 0.3s;" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'" data-aos="zoom-in" data-aos-delay="100">
+                <img src="coord6.jpeg" style="width: 140px; height: 140px; border-radius: 50%; object-fit: cover; object-position: top; border: 3px solid var(--primary-color); margin-bottom: 1.5rem; box-shadow: 0 0 20px var(--shadow-glow);" alt="Secretary">
+                <h4 style="color: var(--heading-color); font-size: 1.2rem; margin: 0 0 0.5rem 0;">Hemant Sweta Barjatya</h4>
+                <p style="color: var(--primary-color); font-size: 0.85rem; margin: 0; text-transform: uppercase; letter-spacing: 2px;">Secretary</p>
+            </div>
+            
+            <!-- President -->
+            <div style="background: linear-gradient(135deg, var(--glass-bg-hover), rgba(0, 217, 255, 0.15)); backdrop-filter: blur(10px); border: 1px solid var(--primary-color); border-radius: 20px; padding: 2.5rem 1.5rem; width: 340px; box-shadow: 0 10px 40px var(--shadow-glow); transform: scale(1.05); z-index: 10;" data-aos="zoom-in">
+                <div style="position: relative; display: inline-block; margin-bottom: 1.5rem;">
+                    <img src="president.jpeg" style="width: 180px; height: 180px; border-radius: 50%; object-fit: cover; object-position: top; border: 4px solid var(--primary-color); box-shadow: 0 0 30px var(--shadow-glow);" alt="President">
+                    <div style="position: absolute; bottom: 5px; right: 5px; background: var(--dark-card); padding: 8px; border-radius: 50%; font-size: 1.5rem; border: 2px solid var(--primary-color); display: flex; align-items: center; justify-content: center;">👑</div>
+                </div>
+                <h4 style="color: var(--heading-color); font-size: 1.5rem; margin: 0 0 0.5rem 0; text-shadow: 0 0 10px var(--shadow-glow);">Piyush Monali Jain</h4>
+                <p style="color: var(--primary-color); font-size: 1rem; margin: 0; text-transform: uppercase; letter-spacing: 3px; font-weight: 600;">President</p>
+            </div>
+            
+            <!-- Treasurer -->
+            <div style="background: var(--glass-bg); backdrop-filter: blur(10px); border: 1px solid var(--shadow-glow); border-radius: 20px; padding: 2rem 1.5rem; width: 280px; box-shadow: 0 8px 32px var(--shadow-soft); transition: transform 0.3s;" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'" data-aos="zoom-in" data-aos-delay="200">
+                <img src="treasurer.jpeg" style="width: 140px; height: 140px; border-radius: 50%; object-fit: cover; object-position: top; border: 3px solid var(--primary-color); margin-bottom: 1.5rem; box-shadow: 0 0 20px var(--shadow-glow);" alt="Treasurer">
+                <h4 style="color: var(--heading-color); font-size: 1.2rem; margin: 0 0 0.5rem 0;">Saurabh Ruby Jain</h4>
+                <p style="color: var(--primary-color); font-size: 0.85rem; margin: 0; text-transform: uppercase; letter-spacing: 2px;">Treasurer</p>
+            </div>
+        </div>
+        
+        <div style="margin-top: 4rem; max-width: 1000px; margin-left: auto; margin-right: auto; padding-top: 3rem; border-top: 1px solid var(--shadow-glow);" data-aos="fade-up">
+            <h3 style="color: var(--primary-color); font-size: 1.8rem; margin-bottom: 2rem; letter-spacing: 2px;">CORE COMMITTEE</h3>
+            
+            <div style="display: flex; justify-content: center; gap: 2rem; margin-bottom: 3rem; flex-wrap: wrap;">
+                <div style="background: var(--glass-bg); border: 1px solid var(--shadow-soft); padding: 1.5rem 2.5rem; border-radius: 15px; box-shadow: 0 4px 15px var(--glass-bg); transition: transform 0.3s;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+                    <h4 style="color: var(--heading-color); margin: 0 0 0.3rem 0; font-size: 1.2rem;">Nayan Monika Jain</h4>
+                    <p style="color: var(--primary-color); margin: 0; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;">Vice President</p>
+                </div>
+                <div style="background: var(--glass-bg); border: 1px solid var(--shadow-soft); padding: 1.5rem 2.5rem; border-radius: 15px; box-shadow: 0 4px 15px var(--glass-bg); transition: transform 0.3s;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+                    <h4 style="color: var(--heading-color); margin: 0 0 0.3rem 0; font-size: 1.2rem;">Ajay Lalita Todia</h4>
+                    <p style="color: var(--primary-color); margin: 0; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;">Advisor</p>
+                </div>
+            </div>
+
+            <h4 style="color: var(--sub-text); font-size: 1.3rem; margin-bottom: 1.5rem; letter-spacing: 1px;">Executive Members</h4>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; text-align: center;">
+                <div style="padding: 1rem; background: var(--glass-bg); border-radius: 10px; border: 1px solid rgba(255,255,255,0.05); color: var(--muted-text); font-weight: 500; transition: background 0.3s, color 0.3s;" onmouseover="this.style.background='var(--shadow-soft)'; this.style.color='white'" onmouseout="this.style.background='var(--glass-bg)'; this.style.color='#ddd'">Akhil Anita Patni</div>
+                <div style="padding: 1rem; background: var(--glass-bg); border-radius: 10px; border: 1px solid rgba(255,255,255,0.05); color: var(--muted-text); font-weight: 500; transition: background 0.3s, color 0.3s;" onmouseover="this.style.background='var(--shadow-soft)'; this.style.color='white'" onmouseout="this.style.background='var(--glass-bg)'; this.style.color='#ddd'">Amit Ruchika Kala</div>
+                <div style="padding: 1rem; background: var(--glass-bg); border-radius: 10px; border: 1px solid rgba(255,255,255,0.05); color: var(--muted-text); font-weight: 500; transition: background 0.3s, color 0.3s;" onmouseover="this.style.background='var(--shadow-soft)'; this.style.color='white'" onmouseout="this.style.background='var(--glass-bg)'; this.style.color='#ddd'">Arpit Surbhi Godha</div>
+                <div style="padding: 1rem; background: var(--glass-bg); border-radius: 10px; border: 1px solid rgba(255,255,255,0.05); color: var(--muted-text); font-weight: 500; transition: background 0.3s, color 0.3s;" onmouseover="this.style.background='var(--shadow-soft)'; this.style.color='white'" onmouseout="this.style.background='var(--glass-bg)'; this.style.color='#ddd'">Chandrapraksh Aprana Patni</div>
+                <div style="padding: 1rem; background: var(--glass-bg); border-radius: 10px; border: 1px solid rgba(255,255,255,0.05); color: var(--muted-text); font-weight: 500; transition: background 0.3s, color 0.3s;" onmouseover="this.style.background='var(--shadow-soft)'; this.style.color='white'" onmouseout="this.style.background='var(--glass-bg)'; this.style.color='#ddd'">Rahul Poornima Jain</div>
+                <div style="padding: 1rem; background: var(--glass-bg); border-radius: 10px; border: 1px solid rgba(255,255,255,0.05); color: var(--muted-text); font-weight: 500; transition: background 0.3s, color 0.3s;" onmouseover="this.style.background='var(--shadow-soft)'; this.style.color='white'" onmouseout="this.style.background='var(--glass-bg)'; this.style.color='#ddd'">Ramesh Deepali Patodi</div>
+                <div style="padding: 1rem; background: var(--glass-bg); border-radius: 10px; border: 1px solid rgba(255,255,255,0.05); color: var(--muted-text); font-weight: 500; transition: background 0.3s, color 0.3s;" onmouseover="this.style.background='var(--shadow-soft)'; this.style.color='white'" onmouseout="this.style.background='var(--glass-bg)'; this.style.color='#ddd'">Ramesh Pushpa Jain</div>
+                <div style="padding: 1rem; background: var(--glass-bg); border-radius: 10px; border: 1px solid rgba(255,255,255,0.05); color: var(--muted-text); font-weight: 500; transition: background 0.3s, color 0.3s;" onmouseover="this.style.background='var(--shadow-soft)'; this.style.color='white'" onmouseout="this.style.background='var(--glass-bg)'; this.style.color='#ddd'">Rohit Pratibha Jain</div>
+                <div style="padding: 1rem; background: var(--glass-bg); border-radius: 10px; border: 1px solid rgba(255,255,255,0.05); color: var(--muted-text); font-weight: 500; transition: background 0.3s, color 0.3s;" onmouseover="this.style.background='var(--shadow-soft)'; this.style.color='white'" onmouseout="this.style.background='var(--glass-bg)'; this.style.color='#ddd'">Shikha Sunil Bakliwal</div>
+                <div style="padding: 1rem; background: var(--glass-bg); border-radius: 10px; border: 1px solid rgba(255,255,255,0.05); color: var(--muted-text); font-weight: 500; transition: background 0.3s, color 0.3s;" onmouseover="this.style.background='var(--shadow-soft)'; this.style.color='white'" onmouseout="this.style.background='var(--glass-bg)'; this.style.color='#ddd'">Shubham Akansha Nigotia</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="footer-content">
+
+            <div class="footer-section">
+                <h5>Quick Links</h5>
+                <ul>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#timeline">Yearly Timeline</a></li>
+                    <li><a href="#membership">Membership Rules</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h5>Contact</h5>
+                <p>📧 <a href="mailto:hemantbarjatya@gmail.com" style="color: var(--muted-text); text-decoration: none; transition: color 0.3s ease;" onmouseover="this.style.color='var(--primary-color)'" onmouseout="this.style.color='var(--muted-text)'">hemantbarjatya@gmail.com</a></p>
+                <p style="line-height: 1.6;">📱 +91 9828015688 <br>&nbsp;&nbsp;&nbsp;&nbsp; +91 9351880001</p>
+                <p>📍 Riverarch Greenfields Resort, Jaipur</p>
+            </div>
+        </div>
+        <div style="text-align: center; padding-top: 3rem; margin-top: 2rem; border-top: 1px solid var(--shadow-soft);" data-aos="fade-up">
+            <h2 style="font-size: clamp(3rem, 10vw, 6rem); font-weight: 900; letter-spacing: 6px; margin: 0; background: linear-gradient(135deg, #00d9ff, #a100f2, #0088ff, #00d9ff); background-size: 300% 300%; -webkit-background-clip: text; -webkit-text-fill-color: transparent; animation: gradientShift 6s ease infinite; filter: drop-shadow(0 10px 20px var(--shadow-glow));">JSG GLORY</h2>
+            <p style="color: var(--muted-text); font-size: 0.9rem; margin-top: 1rem; padding-bottom: 0.5rem;">&copy; 2026 JSG GLORY. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- ==================== BACK TO TOP BUTTON ==================== -->
+    <button class="back-to-top" id="backToTop" onclick="scrollToTop()">
+        <span>↑</span>
+    </button>
+
+    <!-- ==================== LOADING ANIMATION ==================== -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <p>JSG GLORY</p>
+        </div>
+    </div>
+
+    <script src="script.js?v=20260510"></script>
+    <!-- ==================== BACKGROUND MUSIC ==================== -->
+    <audio id="bgMusic" loop>
+        <source src="bgm.mpeg" type="audio/mpeg">
+    </audio>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+            <div class="timeline-item" data-aos="fade-right">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <p class="timeline-time">DECEMBER 2026</p>
+                    <h4>🎃 Halloween Party</h4>
+                    <p>Adults special event with dramatic decor, curated entertainment and cinematic after-dark energy.</p>
+                </div>
+            </div>
+            <div class="timeline-item" data-aos="fade-left">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <p class="timeline-time">FEBRUARY 2027</p>
+                    <h4>❤️ Valentine Couple Party</h4>
+                    <p>Theme celebration with a romantic luxury setup for couples and elevated hospitality.</p>
+                </div>
+            </div>
+            <div class="timeline-item" data-aos="fade-right">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <p class="timeline-time">MARCH 2027</p>
+                    <h4>🌈 Holi Program</h4>
+                    <p>Colorful, playful Holi visuals with festive music, community joy and signature JSG GLORY style.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ==================== ANNOUNCEMENT & FEES (REPLACES REGISTRATION/TESTIMONIALS) ==================== -->
+    <section class="announcement-section" id="announcement">
+        <div class="section-header" data-aos="fade-up">
+            <h2>ANNOUNCEMENT FROM TEAM GLORY</h2>
+            <p>Important updates, fees and event details — please read carefully</p>
+        </div>
+        <div class="announcement-container" data-aos="fade-up">
+            <div class="announcement-card">
+                <h3>Dear Friends — Jai Jinendra 🙏</h3>
+                <p>We at Team Glory are grateful for your cooperation, love and support for our beloved group.</p>
+                <p>Please review the yearly event timeline and membership rules for FY 2026-27.</p>
+
+                <div class="fees-list">
+                    <ul>
+                        <li>💎 Couple (Husband & Wife): <strong>₹18,000</strong></li>
+                        <li>💎 Kids: <strong>₹1,500</strong> per kid</li>
+                        <li>💎 Registration fee for new members: <strong>₹1,000</strong></li>
+                        <li>💎 Add new members and kids to enjoy the full premium yearly schedule.</li>
+                    </ul>
+                </div>
+
+
+                <p>With heartfelt gratitude,</p>
+                <p>🖋️ Piyush Monali Soni — President<br>
+                   🖋️ Hemant Sweta Barjatya — Secretary<br>
+                   🖋️ Ruby Saurabh Jain — Treasurer</p>
+
+                <div class="announcement-actions">
+                    <a href="#membership" class="btn btn-secondary">View Membership Rules</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== WHY JOIN SECTION ==================== -->
+    <section class="why-join-section">
+        <div class="section-header" data-aos="fade-up">
+            <h2>WHY JOIN JSG GLORY</h2>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="50">
+                <div class="feature-icon">🤝</div>
+                <h4>Networking</h4>
+            </div>
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="feature-icon">🎵</div>
+                <h4>Music & Entertainment</h4>
+            </div>
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="150">
+                <div class="feature-icon">📸</div>
+                <h4>Memories</h4>
+            </div>
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="250">
+                <div class="feature-icon">🎉</div>
+                <h4>Fun Activities</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== LEADERSHIP SECTION ==================== -->
+    <section class="leadership-section" style="padding: 4rem 2rem 2rem; text-align: center; background: var(--dark-bg);">
+        <div class="section-header" data-aos="fade-up">
+            <h2>TEAM GLORY LEADERSHIP</h2>
+            <p>The visionaries behind our premium experiences</p>
+        </div>
+        <div style="display: flex; justify-content: center; align-items: center; gap: 2rem; flex-wrap: wrap; max-width: 1100px; margin: 0 auto; padding-top: 2rem;">
+            <!-- Secretary -->
+            <div style="background: var(--glass-bg); backdrop-filter: blur(10px); border: 1px solid var(--shadow-glow); border-radius: 20px; padding: 2rem 1.5rem; width: 280px; box-shadow: 0 8px 32px var(--shadow-soft); transition: transform 0.3s;" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'" data-aos="zoom-in" data-aos-delay="100">
+                <img src="coord6.jpeg" style="width: 140px; height: 140px; border-radius: 50%; object-fit: cover; object-position: top; border: 3px solid var(--primary-color); margin-bottom: 1.5rem; box-shadow: 0 0 20px var(--shadow-glow);" alt="Secretary">
+                <h4 style="color: var(--heading-color); font-size: 1.2rem; margin: 0 0 0.5rem 0;">Hemant Sweta Barjatya</h4>
+                <p style="color: var(--primary-color); font-size: 0.85rem; margin: 0; text-transform: uppercase; letter-spacing: 2px;">Secretary</p>
+            </div>
+            
+            <!-- President -->
+            <div style="background: linear-gradient(135deg, var(--glass-bg-hover), rgba(0, 217, 255, 0.15)); backdrop-filter: blur(10px); border: 1px solid var(--primary-color); border-radius: 20px; padding: 2.5rem 1.5rem; width: 340px; box-shadow: 0 10px 40px var(--shadow-glow); transform: scale(1.05); z-index: 10;" data-aos="zoom-in">
+                <div style="position: relative; display: inline-block; margin-bottom: 1.5rem;">
+                    <img src="president.jpeg" style="width: 180px; height: 180px; border-radius: 50%; object-fit: cover; object-position: top; border: 4px solid var(--primary-color); box-shadow: 0 0 30px var(--shadow-glow);" alt="President">
+                    <div style="position: absolute; bottom: 5px; right: 5px; background: var(--dark-card); padding: 8px; border-radius: 50%; font-size: 1.5rem; border: 2px solid var(--primary-color); display: flex; align-items: center; justify-content: center;">👑</div>
+                </div>
+                <h4 style="color: var(--heading-color); font-size: 1.5rem; margin: 0 0 0.5rem 0; text-shadow: 0 0 10px var(--shadow-glow);">Piyush Monali Jain</h4>
+                <p style="color: var(--primary-color); font-size: 1rem; margin: 0; text-transform: uppercase; letter-spacing: 3px; font-weight: 600;">President</p>
+            </div>
+            
+            <!-- Treasurer -->
+            <div style="background: var(--glass-bg); backdrop-filter: blur(10px); border: 1px solid var(--shadow-glow); border-radius: 20px; padding: 2rem 1.5rem; width: 280px; box-shadow: 0 8px 32px var(--shadow-soft); transition: transform 0.3s;" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'" data-aos="zoom-in" data-aos-delay="200">
+                <img src="treasurer.jpeg" style="width: 140px; height: 140px; border-radius: 50%; object-fit: cover; object-position: top; border: 3px solid var(--primary-color); margin-bottom: 1.5rem; box-shadow: 0 0 20px var(--shadow-glow);" alt="Treasurer">
+                <h4 style="color: var(--heading-color); font-size: 1.2rem; margin: 0 0 0.5rem 0;">Saurabh Ruby Jain</h4>
+                <p style="color: var(--primary-color); font-size: 0.85rem; margin: 0; text-transform: uppercase; letter-spacing: 2px;">Treasurer</p>
+            </div>
+        </div>
+        
+        <div style="margin-top: 4rem; max-width: 1000px; margin-left: auto; margin-right: auto; padding-top: 3rem; border-top: 1px solid var(--shadow-glow);" data-aos="fade-up">
+            <h3 style="color: var(--primary-color); font-size: 1.8rem; margin-bottom: 2rem; letter-spacing: 2px;">CORE COMMITTEE</h3>
+            
+            <div style="display: flex; justify-content: center; gap: 2rem; margin-bottom: 3rem; flex-wrap: wrap;">
+                <div style="background: var(--glass-bg); border: 1px solid var(--shadow-soft); padding: 1.5rem 2.5rem; border-radius: 15px; box-shadow: 0 4px 15px var(--glass-bg); transition: transform 0.3s;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+                    <h4 style="color: var(--heading-color); margin: 0 0 0.3rem 0; font-size: 1.2rem;">Nayan Monika Jain</h4>
+                    <p style="color: var(--primary-color); margin: 0; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;">Vice President</p>
+                </div>
+                <div style="background: var(--glass-bg); border: 1px solid var(--shadow-soft); padding: 1.5rem 2.5rem; border-radius: 15px; box-shadow: 0 4px 15px var(--glass-bg); transition: transform 0.3s;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+                    <h4 style="color: var(--heading-color); margin: 0 0 0.3rem 0; font-size: 1.2rem;">Ajay Lalita Todia</h4>
+                    <p style="color: var(--primary-color); margin: 0; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;">Advisor</p>
+                </div>
+            </div>
+
+            <h4 style="color: var(--sub-text); font-size: 1.3rem; margin-bottom: 1.5rem; letter-spacing: 1px;">Executive Members</h4>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; text-align: center;">
+                <div style="padding: 1rem; background: var(--glass-bg); border-radius: 10px; border: 1px solid rgba(255,255,255,0.05); color: var(--muted-text); font-weight: 500; transition: background 0.3s, color 0.3s;" onmouseover="this.style.background='var(--shadow-soft)'; this.style.color='white'" onmouseout="this.style.background='var(--glass-bg)'; this.style.color='#ddd'">Akhil Anita Patni</div>
+                <div style="padding: 1rem; background: var(--glass-bg); border-radius: 10px; border: 1px solid rgba(255,255,255,0.05); color: var(--muted-text); font-weight: 500; transition: background 0.3s, color 0.3s;" onmouseover="this.style.background='var(--shadow-soft)'; this.style.color='white'" onmouseout="this.style.background='var(--glass-bg)'; this.style.color='#ddd'">Amit Ruchika Kala</div>
+                <div style="padding: 1rem; background: var(--glass-bg); border-radius: 10px; border: 1px solid rgba(255,255,255,0.05); color: var(--muted-text); font-weight: 500; transition: background 0.3s, color 0.3s;" onmouseover="this.style.background='var(--shadow-soft)'; this.style.color='white'" onmouseout="this.style.background='var(--glass-bg)'; this.style.color='#ddd'">Arpit Surbhi Godha</div>
+                <div style="padding: 1rem; background: var(--glass-bg); border-radius: 10px; border: 1px solid rgba(255,255,255,0.05); color: var(--muted-text); font-weight: 500; transition: background 0.3s, color 0.3s;" onmouseover="this.style.background='var(--shadow-soft)'; this.style.color='white'" onmouseout="this.style.background='var(--glass-bg)'; this.style.color='#ddd'">Chandrapraksh Aprana Patni</div>
+                <div style="padding: 1rem; background: var(--glass-bg); border-radius: 10px; border: 1px solid rgba(255,255,255,0.05); color: var(--muted-text); font-weight: 500; transition: background 0.3s, color 0.3s;" onmouseover="this.style.background='var(--shadow-soft)'; this.style.color='white'" onmouseout="this.style.background='var(--glass-bg)'; this.style.color='#ddd'">Rahul Poornima Jain</div>
+                <div style="padding: 1rem; background: var(--glass-bg); border-radius: 10px; border: 1px solid rgba(255,255,255,0.05); color: var(--muted-text); font-weight: 500; transition: background 0.3s, color 0.3s;" onmouseover="this.style.background='var(--shadow-soft)'; this.style.color='white'" onmouseout="this.style.background='var(--glass-bg)'; this.style.color='#ddd'">Ramesh Deepali Patodi</div>
+                <div style="padding: 1rem; background: var(--glass-bg); border-radius: 10px; border: 1px solid rgba(255,255,255,0.05); color: var(--muted-text); font-weight: 500; transition: background 0.3s, color 0.3s;" onmouseover="this.style.background='var(--shadow-soft)'; this.style.color='white'" onmouseout="this.style.background='var(--glass-bg)'; this.style.color='#ddd'">Ramesh Pushpa Jain</div>
+                <div style="padding: 1rem; background: var(--glass-bg); border-radius: 10px; border: 1px solid rgba(255,255,255,0.05); color: var(--muted-text); font-weight: 500; transition: background 0.3s, color 0.3s;" onmouseover="this.style.background='var(--shadow-soft)'; this.style.color='white'" onmouseout="this.style.background='var(--glass-bg)'; this.style.color='#ddd'">Rohit Pratibha Jain</div>
+                <div style="padding: 1rem; background: var(--glass-bg); border-radius: 10px; border: 1px solid rgba(255,255,255,0.05); color: var(--muted-text); font-weight: 500; transition: background 0.3s, color 0.3s;" onmouseover="this.style.background='var(--shadow-soft)'; this.style.color='white'" onmouseout="this.style.background='var(--glass-bg)'; this.style.color='#ddd'">Shikha Sunil Bakliwal</div>
+                <div style="padding: 1rem; background: var(--glass-bg); border-radius: 10px; border: 1px solid rgba(255,255,255,0.05); color: var(--muted-text); font-weight: 500; transition: background 0.3s, color 0.3s;" onmouseover="this.style.background='var(--shadow-soft)'; this.style.color='white'" onmouseout="this.style.background='var(--glass-bg)'; this.style.color='#ddd'">Shubham Akansha Nigotia</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="footer-content">
+
+            <div class="footer-section">
+                <h5>Quick Links</h5>
+                <ul>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#timeline">Yearly Timeline</a></li>
+                    <li><a href="#membership">Membership Rules</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h5>Contact</h5>
+                <p>📧 <a href="mailto:hemantbarjatya@gmail.com" style="color: var(--muted-text); text-decoration: none; transition: color 0.3s ease;" onmouseover="this.style.color='var(--primary-color)'" onmouseout="this.style.color='var(--muted-text)'">hemantbarjatya@gmail.com</a></p>
+                <p style="line-height: 1.6;">📱 +91 9828015688 <br>&nbsp;&nbsp;&nbsp;&nbsp; +91 9351880001</p>
+                <p>📍 Riverarch Greenfields Resort, Jaipur</p>
+            </div>
+        </div>
+        <div style="text-align: center; padding-top: 3rem; margin-top: 2rem; border-top: 1px solid var(--shadow-soft);" data-aos="fade-up">
+            <h2 style="font-size: clamp(3rem, 10vw, 6rem); font-weight: 900; letter-spacing: 6px; margin: 0; background: linear-gradient(135deg, #00d9ff, #a100f2, #0088ff, #00d9ff); background-size: 300% 300%; -webkit-background-clip: text; -webkit-text-fill-color: transparent; animation: gradientShift 6s ease infinite; filter: drop-shadow(0 10px 20px var(--shadow-glow));">JSG GLORY</h2>
+            <p style="color: var(--muted-text); font-size: 0.9rem; margin-top: 1rem; padding-bottom: 0.5rem;">&copy; 2026 JSG GLORY. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- ==================== BACK TO TOP BUTTON ==================== -->
+    <button class="back-to-top" id="backToTop" onclick="scrollToTop()">
+        <span>↑</span>
+    </button>
+
+    <!-- ==================== LOADING ANIMATION ==================== -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <p>JSG GLORY</p>
+        </div>
+    </div>
+
+    <script src="script.js?v=20260510"></script>
+    <!-- ==================== BACKGROUND MUSIC ==================== -->
+    <audio id="bgMusic" loop>
+        <source src="bgm.mpeg" type="audio/mpeg">
+    </audio>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+    </script>
+</body>
+</html>
